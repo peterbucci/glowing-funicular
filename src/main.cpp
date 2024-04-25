@@ -81,6 +81,7 @@ void printStudentMap()
 {
     for (map<string, Student>::iterator it = studentMap.begin(); it != studentMap.end(); ++it)
     {
+        cout << it->first << ": ";             // Print student id
         cout << it->second.toString() << endl; // Print student information
     }
 }
